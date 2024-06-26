@@ -4,6 +4,8 @@ import Landingpage from "./LandingPage/Landingpage";
 import Items from "./Items/Items";
 import {} from "react-router-dom";
 import { BrowserRouter as Router , Routes, Route  } from "react-router-dom";
+import Detail from "./Detail/Detail";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Landingpage />}/>
+            <Route path="/movie/:movieId" element={<Detail />}/>
             <Route path="/items" element={<Items />}/>
           </Routes>
         </Router>
@@ -22,6 +25,8 @@ function App() {
     </div>
   );
 }
+
+
 // {/* minheight: 최소 높이 */}
 export default App;
 

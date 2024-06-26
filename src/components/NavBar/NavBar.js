@@ -3,7 +3,7 @@ import React from 'react';
 
 const { Header} = Layout;
 
-const items1 = ['HOME', '메뉴'].map((key) => ({
+const items1 = ['Home'].map((key) => ({
   key,
   label: key,
 }));

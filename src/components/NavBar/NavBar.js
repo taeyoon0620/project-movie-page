@@ -1,12 +1,13 @@
 import { Layout, Menu } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom'
 
-const { Header} = Layout;
+const { Header } = Layout;
 
-const items1 = ['Home'].map((key) => ({
-  key,
-  label: key,
-}));
+const items1 = [{
+  key: 'Home',
+  label: (<Link to='/'>  Home </Link>)
+}]
 
 const NavBar = () => {
 
@@ -22,7 +23,7 @@ const NavBar = () => {
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={['로고']}
+          defaultSelectedKeys={['Home']}
           items={items1}
           style={{
             flex: 1,
@@ -33,5 +34,4 @@ const NavBar = () => {
     </Layout>
   );
 };
-
 export default NavBar;

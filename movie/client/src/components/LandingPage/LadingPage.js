@@ -1,11 +1,10 @@
+import { Row } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { API_KEY, API_URL, IMAGE_BASE_URL } from '../Config';
 import MainImage from './Section/MainImage';
-import GridCards from '../commons/GridCards';
-import { Row } from 'antd';
 
 import { Button } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import AntCard from '../commons/AntCard';
 
 function LadingPage() {

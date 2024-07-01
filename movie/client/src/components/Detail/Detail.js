@@ -7,7 +7,6 @@ import { Button } from 'antd';
 import { Row } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import AntCard from '../commons/AntCard';
-import { Breadcrumb } from 'antd';
 
 
 function Detail() {
@@ -18,12 +17,9 @@ function Detail() {
   // [state] ======================================
   const [Movie, setMovie] = useState({});
   const [Casts, setCasts] = useState([]);
-  const [Crews, setCrews] = useState([]);
 
   const [CrewToggle, setCrewToggle] = useState(false);
   const [ActorToggle, setActorToggle] = useState(false);
-
-
 
   useEffect(() => {
     // console.log('페이지가 로드되면, 실행됩니다.');
